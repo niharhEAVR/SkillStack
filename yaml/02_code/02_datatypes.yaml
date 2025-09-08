@@ -1,0 +1,50 @@
+name: "cooldude"
+fruits: "apple, banana, cherry"
+
+bio : |
+  Hello, I'm a cool dude.
+  I like to code and play guitar.
+  My favorite actresses are: kate winslet, jennifer lawrence, scarlett johansson.
+
+aim : >
+  To be the best developer I can be.
+  To learn new things every day.
+  To make a positive impact on the world.
+
+array-numbers: [1, 2, 3, 4, 5]
+array-strings: ["red", "green", "blue"]
+number: 42
+float: 3.14
+booleanValue: true # y, Y, yes, on, 1 are also valid
+booleanValue2: false # n, N, no, off, 0 are also valid
+nullValue: null
+strings: "This is a string"
+date: 2024-06-15
+datetime: 2024-06-15T10:30:00Z
+
+zero: !!int 0
+positive: !!int 123
+negative: !!int -456
+float-positive: !!float 3.14159
+float-negative: !!float -2.71828
+scientific: !!float 1.23e4
+scientific-negative: !!float -5.67e-8
+infinity: !!float .inf
+negative-infinity: !!float -.inf
+not-a-number: !!float .nan
+explicit-string: !!str 12345
+explicit-bool-true: !!bool true
+explicit-bool-false: !!bool false
+explicit-null: !!null null
+
+
+binaryNum: !!int 0b101010
+octalNum: !!int 0o52
+hexNum: !!int 0x2A
+
+commaValues: !!int +1_000_000 # 1,000,000
+
+surname: !!null Null # or ~
+
+~: this is a null key
+

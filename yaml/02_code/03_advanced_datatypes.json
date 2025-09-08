@@ -1,0 +1,118 @@
+{
+  "student": [
+    {
+      "name": "John Doe",
+      "age": 21,
+      "courses": ["Math", "Science", "Literature"]
+    },
+    {
+      "name": "Jane Smith",
+      "age": 22,
+      "courses": ["History", "Art", "Physics"]
+    }
+  ],
+
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": 12345
+  },
+
+  "contacts": [
+    { "email": "john.doe@example.com" },
+    { "email": "jane.smith@example.com" }
+  ],
+
+  "preferences": {
+    "dark_mode": null,
+    "notifications": null,
+    "auto_save": null
+  },
+
+  "matrix": [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ],
+
+  "tuple": ["Alice", 30, "Engineer"],
+
+  "complex-number": "3 + 4i",
+
+  "date-only": "2024-06-15",
+
+  "time-only": "10:30:00",
+
+  "timestamp-with-offset": "2024-06-15T10:30:00-05:00",
+
+  "sparse-seq": ["first", null, "third", null, "fifth"],
+
+  "sparse-map": {
+    "key1": "value1",
+    "key2": null,
+    "key3": "value3",
+    "key4": null,
+    "key5": "value5"
+  },
+
+  "nested-map": {
+    "outer-key1": {
+      "inner-key1": "inner-value1",
+      "inner-key2": "inner-value2"
+    },
+    "outer-key2": {
+      "inner-key3": "inner-value3",
+      "inner-key4": "inner-value4"
+    }
+  },
+
+  "pair example": ["left", "right"],
+
+  "unique-set": {
+    "item1": null,
+    "item2": null,
+    "item3": null
+  },
+
+  "mixed-dict": [
+    { "name": "Alice" },
+    { "age": 28 },
+    { "is_student": false },
+    { "scores": [95, 88, 92] },
+    {
+      "address": {
+        "street": "456 Elm St",
+        "city": "Othertown",
+        "state": "NY",
+        "zip": 67890
+      }
+    }
+  ],
+
+  "defaults": {
+    "kidney": "healthy",
+    "heart": "healthy"
+  },
+
+  "person1": {
+    "kidney": "healthy",
+    "heart": "healthy",
+    "name": "Bob",
+    "age": 35
+  },
+
+  "person2": {
+    "kidney": "healthy",
+    "heart": "healthy",
+    "name": "Alice",
+    "age": 30
+  },
+
+  "person3": {
+    "kidney": "needs checkup",
+    "heart": "healthy",
+    "name": "Charlie",
+    "age": 25
+  }
+}

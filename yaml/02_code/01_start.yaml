@@ -1,0 +1,38 @@
+# First document
+---
+name: Harsh
+age: 19
+
+# Second document
+---
+name: Rahul
+age: 21
+
+
+---
+
+# lists
+- name: Harsh
+  age: 19
+- name: Rahul
+  age: 21
+
+# nested lists
+- name: Harsh
+  age: 19
+  skills:
+    - Python
+    - C++
+
+---
+
+# lists
+cities : [agra, kolkata, delhi] 
+# this is same a previous lists but if you are avoiding new lines you can use this syntax (Indentation)
+
+---
+
+{many: "key-value", pairs: "in", one: "line"}
+
+
+... # end of document

@@ -1,0 +1,114 @@
+student : !!seq
+  - name: John Doe
+    age: 21
+    courses:
+      - Math
+      - Science
+      - Literature
+  - name: Jane Smith
+    age: 22
+    courses:
+      - History
+      - Art
+      - Physics
+
+address : !!map
+  street: 123 Main St
+  city: Anytown
+  state: CA
+  zip: 12345
+
+contacts : !!omap
+  - email: john.doe@example.com
+  - email: jane.smith@example.com
+
+preferences : !!set
+  dark_mode: true # keys are unique
+  notifications: false 
+  auto_save: true
+matrix : !!seq
+  - !!seq [1, 2, 3]
+  - !!seq [4, 5, 6]
+  - !!seq [7, 8, 9]
+
+tuple: !!seq [ "Alice", 30, "Engineer" ] # fixed size and types
+
+complex-number: !!str "3 + 4i" # YAML does not have a native complex type
+
+date-only: !!timestamp 2024-06-15
+
+time-only: !!timestamp 10:30:00
+
+timestamp-with-offset: !!timestamp 2024-06-15T10:30:00-05:00
+
+# Some of the keys of the seq will be empty
+# sparse sequence
+sparse-seq: !!seq
+  - first
+  - 
+  - third
+  - 
+  - fifth
+
+# Some of the keys of the map will be empty
+sparse-map: !!map
+  key1: value1
+  key2: 
+  key3: value3
+  key4: 
+  key5: value5
+
+# Nested map
+nested-map: !!map
+  outer-key1: 
+    inner-key1: inner-value1
+    inner-key2: inner-value2
+  outer-key2: 
+    inner-key3: inner-value3
+    inner-key4: inner-value4
+
+pair example: !!pair
+  first: "left"
+  second: "right"
+
+# same as 
+pair example: !!seq [ "left", "right" ]
+
+# set will ignore duplicate keys
+unique-set: !!set
+  item1: true
+  item2: true
+  item3: true
+  item1: true # duplicate, will be ignored
+
+# dictionary with mixed value types with omap
+mixed-dict: !!omap
+  - name: Alice
+  - age: 28
+  - is_student: false
+  - scores: !!seq [95, 88, 92]
+  - address: 
+      street: 456 Elm St
+      city: Othertown
+      state: NY
+      zip: 67890
+
+
+# anchor and alias example
+defaults: &defaults
+  kidney: healthy
+  heart: healthy
+
+person1:
+  <<: *defaults
+  name: Bob
+  age: 35
+person2:
+  <<: *defaults
+  name: Alice
+  age: 30
+person3:
+  <<: *defaults
+  name: Charlie
+  age: 25
+  kidney: needs checkup # override default

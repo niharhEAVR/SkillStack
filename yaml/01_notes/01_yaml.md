@@ -119,3 +119,87 @@ if age > 18:
 * **Serialization/Deserialization** = converting between objects and YAML text.
 * **YAML only stores data** = it represents information like configs, settings, lists, mappings, etc.
 * **No commands** = to keep it **safe, portable, and purely descriptive**, not executable.
+
+
+
+---
+---
+---
+
+
+Knowing **YAML** well makes you a stronger developer, especially since it’s used everywhere (Docker, Kubernetes, Ansible, GitHub Actions, CI/CD pipelines, etc.).
+
+Here’s a **must-learn roadmap for YAML** (organized step by step):
+
+---
+
+## ✅ Core YAML Basics (foundation)
+
+1. **YAML syntax rules**
+
+   * Indentation (spaces, not tabs)
+   * Key–value pairs (`key: value`)
+   * Comments (`# this is a comment`)
+
+2. **Scalars (basic values)**
+
+   * Strings, numbers, booleans
+   * Quoted vs unquoted strings
+   * Null (`null` / `~`)
+
+3. **Collections**
+
+   * **Lists (sequences)** → `- item1`
+   * **Dictionaries (mappings)** → `key: value`
+   * Nested structures (lists inside maps, maps inside lists)
+
+---
+
+## ✅ Intermediate YAML (practical use)
+
+4. **Anchors & Aliases**
+
+   * Reuse values with `&` and `*`
+   * Example:
+
+     ```yaml
+     default: &default
+       retries: 3
+       timeout: 30
+
+     service1:
+       <<: *default
+       timeout: 60
+     ```
+
+5. **YAML Data Types**
+
+   * Dates & timestamps
+   * Multi-line strings (`|` literal, `>` folded)
+
+6. **Environment Variables (in tools)**
+
+   * How YAML interacts with variables in Docker/Kubernetes/GitHub Actions
+
+---
+
+## ✅ Advanced YAML (for DevOps & Projects)
+
+7. **Custom tags** (`!!str`, `!!seq`, `!!map`)
+8. **Complex nesting** for real-world configs (like Kubernetes deployments)
+9. **YAML vs JSON** → YAML can be converted to JSON (and vice versa)
+10. **Validation & Linting** → Using tools to catch errors (because indentation mistakes break YAML easily)
+
+---
+
+## ✅ Real-World Applications (must for a developer)
+
+* **Docker Compose (`docker-compose.yml`)**
+* **Kubernetes manifests (`deployment.yaml`, `service.yaml`)**
+* **GitHub Actions workflows (`.github/workflows/*.yml`)**
+* **Ansible playbooks (`playbook.yml`)**
+* **CI/CD pipelines** (GitLab CI, Azure DevOps, CircleCI, etc.)
+
+---
+
+👉 If you master the **core + intermediate + real-world parts**, you’ll be able to read, write, and debug YAML files in any DevOps or backend project.

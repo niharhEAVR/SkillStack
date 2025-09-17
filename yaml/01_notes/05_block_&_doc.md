@@ -85,5 +85,3 @@ age: 21
 
 * **Block** = indentation style (how you write data).
 * **Document** = full YAML content (can be single or multiple in a file).
-
----

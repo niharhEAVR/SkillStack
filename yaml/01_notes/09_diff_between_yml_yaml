@@ -1,0 +1,39 @@
+There is **no difference** between **`.yml`** and **`.yaml`** files in terms of content, syntax, or how they work. Both are used for **YAML (YAML Ain’t Markup Language)**.
+
+The only difference is the **file extension**:
+
+* **`.yaml`** → The official recommended extension (preferred by YAML maintainers).
+* **`.yml`** → A shorter alternative extension, often used historically because some older systems limited file extensions to 3 characters.
+
+✅ Both work the same way — you can rename `config.yml` to `config.yaml` and it will still be valid.
+
+👉 So the main difference is just **naming convention**, not functionality.
+
+
+---
+---
+
+
+Great follow-up 👍
+
+Here’s why **two extensions (`.yml` and `.yaml`) exist** even though they mean the same thing:
+
+1. **Early Operating System Limitations**
+
+   * In the past, some operating systems (like **MS-DOS**, Windows FAT file systems, and older UNIX tools) only supported **3-character file extensions**.
+   * Because of that, `.yml` was created as a **shortened version** of `.yaml`.
+
+2. **Community Convenience**
+
+   * Many developers preferred `.yml` simply because it’s **quicker to type**.
+   * So, both `.yml` and `.yaml` got adopted in different projects.
+
+3. **Standardization**
+
+   * Later, the YAML specification maintainers declared **`.yaml` as the official recommended extension** to avoid confusion.
+   * But since `.yml` was already widely used (especially in tools like Docker Compose, GitHub Actions, Ansible), both are still accepted today.
+
+👉 In short:
+
+* `.yml` → born due to **3-letter extension restrictions & typing convenience**.
+* `.yaml` → the **official modern standard**.

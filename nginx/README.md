@@ -4,6 +4,17 @@
 
 ## common nginx commands:
 
+#### Install Nginx
+
+Depending on your system:
+
+* **Ubuntu/Debian (Linux):**
+
+```bash
+sudo apt update
+sudo apt install nginx
+```
+
 ```sh
 
 sudo service nginx start
